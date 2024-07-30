@@ -1,0 +1,119 @@
+body {
+    text-align: center;
+    /* body全体を中央揃え */
+    font-family: fantasy;
+}
+
+.notice {
+    color: #ee0b0b;
+}
+
+.subnotice {
+    color: white;
+    background-color: #ee0b0b;
+    font-weight: bolder;
+}
+
+.resizeimage img {
+    width: 50%;
+}
+
+.menu {
+    color: white;
+    background-color: black;
+    background-image: -moz-element();
+    padding: 10px 10px 10px 10px;
+
+    a:link {
+        color: rgb(0, 0, 0);
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+
+    }
+
+    a:active {
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+.process {
+    color: aliceblue;
+    width: 300px;
+    margin: auto;
+}
+
+.image-container {
+    display: inline-block;
+    /* インラインブロック要素として表示 */
+    text-align: left;
+    /* 画像を左寄せにするため */
+    margin-bottom: 20px;
+    /* コンテナの下に余白を設定 */
+}
+
+.image-container img {
+    display: block;
+    /* 画像をブロック要素として表示 */
+    width: 50%;
+    /* 画像の幅を50%に設定 */
+    height: auto;
+    /* 高さを自動で調整 */
+    margin: 10px auto;
+    /* 上下に10px、左右に自動マージンを設定 */
+    border-bottom: 10px solid #a013d8;
+    /* 画像の下に10pxの紫色のボーダーを設定 */
+    padding-bottom: 20px;
+    /* 区切り線と画像の間の余白を設定 */
+}
+
+.to_top {
+    font-weight: bolder;
+    border-radius: 10px 10px 10px 10px; 
+    background-size:auto;
+    a:link {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    }
+
+    a:visited {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    }
+
+    a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    }
+
+    a:active {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 内容が多くて収まりきらない場合は折り返し */
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    text-decoration: none;
+}
