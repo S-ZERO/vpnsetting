@@ -3,27 +3,128 @@ body {
     /* body全体を中央揃え */
     font-family: fantasy;
 }
-
+h1{
+    margin-bottom :0px;
+    font-size: 5vw;
+    /* width: 100vw; */
+}
 .notice {
     color: #ee0b0b;
 }
 
+/* checkboxデザイン */
 .subnotice {
     color: white;
     background-color: #ee0b0b;
     font-weight: bolder;
+    width: 40vw;
+    margin: 0 auto; /* これでセンタリング */
 }
 
+.checkbox {
+    margin-right: 10px; /* チェックボックスとラベルの間のスペース */
+    font-size: large;
+}
+@media (min-width: 789px) {
+    
+    label {
+        display: inline-flex;
+        /* font-size: 1.2em; */
+        align-items: center;
+        margin-bottom: 5px;
+        /* チェックボックスとラベル間のスペース */
+    }
+}
+/* checkboxデザイン */
+
+#submit-button {
+    margin-top: 25px;
+    width: 20vw;
+    height: 15vh;
+}
+.button-font{
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+}
+/* ボタンが有効な時のスタイル */
+#submit-button:not(:disabled) {
+    background-color: #000000; 
+}
+/* ボタンのホバー時のスタイル（有効な時のみ） */
+#submit-button:not(:disabled):hover {
+    background-color: #ff0000; 
+}
+
+/* ボタンが無効な時のスタイル */
+#submit-button:disabled {
+    background-color: #ffffff; /* グレー */
+    cursor: not-allowed;
+}
+
+
+/* スマホの場合 */
+@media (max-width: 768px) {
+    h1{
+        font-size: medium;
+        width: 100%;
+    }
+    
+    .subnotice {
+        color: white;
+        background-color: #ee0b0b;
+        font-weight: bolder;
+        width: 100vw;
+        margin: 0 auto;/* これでセンタリング */
+    }
+    label {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 5px;
+        /* チェックボックスとラベル間のスペース */
+    }
+    #submit-button {
+        margin-top: 5px;
+        width: 105px;
+        height: 40px;
+    }
+    .button-font{
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+
+
+
+/* フォームを左揃えにする */
+#checkbox-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 .resizeimage img {
-    width: 50%;
+    width: 40vw;
+}
+@media (max-width: 768px) {
+    .resizeimage img {
+        width: 100vw;
+    }
 }
 
 .menu {
     color: white;
     background-color: black;
-    background-image: -moz-element();
+    /* background-image: -moz-element(); */
+    margin-top: 1000px;
     padding: 10px 10px 10px 10px;
-
+    width: 50vw;
+    margin: 0 auto;
     a:link {
         color: rgb(0, 0, 0);
     }
@@ -40,7 +141,11 @@ body {
     a:active {
         color: rgb(0, 0, 0);
     }
+}
 
+.menu h1{
+    text-align: center;
+    margin: 0 auto;
 }
 
 .process {
@@ -75,31 +180,32 @@ body {
 
 .to_top {
     font-weight: bolder;
-    border-radius: 10px 10px 10px 10px; 
-    background-size:auto;
+    border-radius: 10px 10px 10px 10px;
+    background-size: auto;
+
     a:link {
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
     }
 
     a:visited {
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
     }
 
     a:hover {
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
 
-        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
     }
 
     a:active {
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
     }
 }
 

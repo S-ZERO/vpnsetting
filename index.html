@@ -15,29 +15,24 @@
     <p class="resizeimage">
         <img src="./images/TOP.jpg" alt="top image" />
     </p>
-    <div class="container">
-        <div class="notice">
-            <h1>请不要通过VPN输入关于下边的事情</h1>
-
-            <div class="subnotice">
-                <h2>
-                    <p>批评政府・国家</p>
-                    <p>批评个人</p>
-                    <p>其他的乱人心事情</p>
-                </h2>
-            </div>
-            <h1>如果发现输入这些就这VPN隔断</h1>
+    <div class="notice">
+        <h1>为了让您顺利地使用VPN<br>
+            都确认打钩后才能点击下一步</h1>
+        <div class="subnotice">
+            <form id="checkbox-notice">
+                <label><input type="checkbox" class="checkbox"> 这个业务是VPN 1个月/5块</label><br>
+                <label><input type="checkbox" class="checkbox"> 禁止发表关于政府・国家以及评论</label><br>
+                <label><input type="checkbox" class="checkbox"> 禁止个人批评</label><br>
+                <label><input type="checkbox" class="checkbox"> 禁止发表侮辱性言论</label><br>
+                <label><input type="checkbox" class="checkbox"> 其他敏感话题都禁止发表</label><br>
+                <label><input type="checkbox" class="checkbox"> 破约的话这个VPN会中断</label><br>
+            </form>
         </div>
-        <div class="menu">
-            <h1>请选择想看的步骤</h1>
-                    <h2>
-                        <a href="./changeAppleID.html" class="menu-btn"><b>换Apple ID</b></a><br>
-                        <a href="./setWGforMo.html" class="menu-btn"><b>手机 WireGuard设置</b></a><br>
-                        <a href="./setWGforWiN.html" class="menu-btn"><b>Win WireGuard设置</b></a>
-                    </h2>
-
-        </div>
+        <button id="submit-button" disabled>
+            <div class="button-font">下一步</div>
+        </button>
     </div>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
